@@ -1,0 +1,26 @@
+import { Router } from "express";
+import userRoutes from "../services/users/routes/index.js";
+import authRoutes from "../services/auth/routes/index.js";
+import categoryRoutes from "../services/categories/routes/index.js";
+import subCategoryRoutes from "../services/subCategories/routes/index.js";
+import productRoutes from "../services/products/routes/index.js";
+import optionGroupRoutes from "../services/optionGroups/routes/index.js";
+import kioskRoutes from "../services/kiosks/routes/index.js";
+import orderRoutes from "../services/orders/routes/index.js";
+import paymentRoutes from "../services/payments/routes/index.js";
+import reportRoutes from "../services/reports/routes/index.js";
+import auditLogRoutes from "../services/auditLogs/routes/index.js";
+const router = Router();
+
+router.use(userRoutes);
+router.use(authRoutes);
+router.use(categoryRoutes);
+router.use(subCategoryRoutes);
+router.use(productRoutes);
+router.use(optionGroupRoutes);
+router.use(kioskRoutes);
+router.use(orderRoutes);
+router.use(paymentRoutes);
+router.use(reportRoutes);
+router.use(auditLogRoutes);
+export default router;
